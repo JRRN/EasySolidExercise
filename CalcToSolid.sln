@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcToSolid", "CalcToSolid\CalcToSolid.csproj", "{EB23BD1A-7C81-4953-B1E5-4057FEED7BC3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcToSolid.Test", "CalcToSolid.Test\CalcToSolid.Test.csproj", "{4AE5C69B-D550-4497-A197-5F15E1D36902}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,5 +15,9 @@ Global
 		{EB23BD1A-7C81-4953-B1E5-4057FEED7BC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB23BD1A-7C81-4953-B1E5-4057FEED7BC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB23BD1A-7C81-4953-B1E5-4057FEED7BC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AE5C69B-D550-4497-A197-5F15E1D36902}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AE5C69B-D550-4497-A197-5F15E1D36902}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AE5C69B-D550-4497-A197-5F15E1D36902}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AE5C69B-D550-4497-A197-5F15E1D36902}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
