@@ -7,12 +7,12 @@ namespace CalcToSolid
 {
     class Program
     {
-        private static readonly ISum _sum = new OperationSum();
-        private static readonly IMul _mul = new OperationMul();
-        private static readonly ISub _sub = new OperationSub();
-        private static readonly IDiv _div = new OperationDiv();
-        private static readonly IConverter _converter = new Converter();
-        private static readonly IMenu _menu = new Menu();
+        private static readonly ISum _sum = new OperationSum(); //Interface segregation
+        private static readonly IMul _mul = new OperationMul(); //Interface segregation
+        private static readonly ISub _sub = new OperationSub(); //Interface segregation
+        private static readonly IDiv _div = new OperationDiv(); //Interface segregation
+        private static readonly IConverter _converter = new Converter(); //Interface segregation
+        private static readonly IMenu _menu = new Menu(); //Interface segregation
 
         static void Main(string[] args)
         {

@@ -5,20 +5,20 @@ namespace CalcToSolid.SolidCalc.Logic
 {
     public class Menu : IMenu
     {
-        public string PrintMenuOperand1()
+        public string PrintMenuOperand1() //Single responsibility)
         {
             Console.WriteLine("Intro First Operand");
             return Console.ReadLine();
 
         }
 
-        public string PrintMenuOperand2()
+        public string PrintMenuOperand2() //Single responsibility)
         {
             Console.WriteLine("Intro Second Operand");
             return Console.ReadLine();
         }
 
-        public OperationType PrintMenuOperation()
+        public OperationType PrintMenuOperation() //Single responsibility)
         {
             Console.WriteLine("Intro Operation");
             Console.WriteLine("0: SUM");
