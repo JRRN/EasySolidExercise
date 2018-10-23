@@ -13,6 +13,7 @@ namespace CalcToSolid
         private static readonly IDiv _div = new OperationDiv(); //Interface segregation
         private static readonly IConverter _converter = new Converter(); //Interface segregation
         private static readonly IMenu _menu = new Menu(); //Interface segregation
+        private static readonly INExpM _nExpM = new OperationNExpM();
 
         static void Main(string[] args)
         {
@@ -32,6 +33,7 @@ namespace CalcToSolid
             Console.WriteLine("1: SUB");
             Console.WriteLine("2: DIV");
             Console.WriteLine("3: MUL");
+            Console.WriteLine("4: NExpM");
             var operation = (OperationType)Console.Read();
 
             var result = new NoSolidCalc().Operation(operation, operand1, operand2);
@@ -48,6 +50,8 @@ namespace CalcToSolid
             if (operation.Equals(OperationType.MUL)) Console.Write(_mul.Mul(operand1, operand2));
             if (operation.Equals(OperationType.SUB)) Console.Write(_sub.Sub(operand1, operand2));
             if (operation.Equals(OperationType.SUM)) Console.Write(_sum.Sum(operand1, operand2));
+            if (operation.Equals(OperationType.NExpM)) Console.Write(_nExpM.NExpM(operand1, operand2));
+
         }
     }
 }

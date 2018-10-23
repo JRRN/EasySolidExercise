@@ -25,6 +25,7 @@ namespace CalcToSolid.SolidCalc.Logic
             Console.WriteLine("1: SUB");
             Console.WriteLine("2: DIV");
             Console.WriteLine("3: MUL");
+            Console.WriteLine("4: NExpM");
             return (OperationType)Console.Read();
         }
     

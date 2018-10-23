@@ -24,6 +24,14 @@ namespace CalcToSolid
                 {
                     return operandOneParsed - operandTwoParsed;
                 }
+                if (operationType.Equals(OperationType.NExpM)){
+                    var result = 0;
+
+                    for (int i= 0; i< operandTwoParsed; i++){
+                        result += operandOneParsed;
+                    }
+                    return result;
+                }
 
                 return operandOneParsed + operandTwoParsed;
             }
@@ -35,6 +43,7 @@ namespace CalcToSolid
         SUM,
         SUB,
         DIV,
-        MUL
+        MUL,
+        NExpM
     }
 }
