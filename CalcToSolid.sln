@@ -1,9 +1,10 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcToSolid", "CalcToSolid\CalcToSolid.csproj", "{EB23BD1A-7C81-4953-B1E5-4057FEED7BC3}"
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalcToSolid", "CalcToSolid\CalcToSolid.csproj", "{EB23BD1A-7C81-4953-B1E5-4057FEED7BC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcToSolid.Test", "CalcToSolid.Test\CalcToSolid.Test.csproj", "{4AE5C69B-D550-4497-A197-5F15E1D36902}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalcToSolid.BDD.Test", "CalcToSolid.BDD.Test\CalcToSolid.BDD.Test.csproj", "{4AE5C69B-D550-4497-A197-5F15E1D36902}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,5 +20,11 @@ Global
 		{4AE5C69B-D550-4497-A197-5F15E1D36902}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4AE5C69B-D550-4497-A197-5F15E1D36902}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4AE5C69B-D550-4497-A197-5F15E1D36902}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DCC922EF-9C46-4C35-8449-27F0EDC05C81}
 	EndGlobalSection
 EndGlobal
