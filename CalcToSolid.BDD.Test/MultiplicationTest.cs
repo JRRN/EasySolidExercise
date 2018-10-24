@@ -1,11 +1,10 @@
-using CalcToSolid.SolidCalc;
 using CalcToSolid.SolidCalc.Interfaces;
 using CalcToSolid.SolidCalc.Logic;
 using Xunit;
 
 namespace CalcToSolid.BDD.Test
 {
-    public class MulTest
+    public class MultiplicationTest
     {
         private static readonly IOperation _mul = new OperationMul();
 

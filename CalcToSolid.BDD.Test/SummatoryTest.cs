@@ -1,4 +1,3 @@
-using CalcToSolid.SolidCalc;
 using CalcToSolid.SolidCalc.Interfaces;
 using CalcToSolid.SolidCalc.Logic;
 using Xunit;

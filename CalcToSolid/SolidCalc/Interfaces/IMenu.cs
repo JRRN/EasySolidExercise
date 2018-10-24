@@ -1,5 +1,4 @@
-﻿using System;
-namespace CalcToSolid.SolidCalc.Interfaces
+﻿namespace CalcToSolid.SolidCalc.Interfaces
 {
     public interface IMenu
     {

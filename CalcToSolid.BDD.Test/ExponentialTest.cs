@@ -4,7 +4,7 @@ using Xunit;
 
 namespace CalcToSolid.BDD.Test
 {
-    public class NExpMTest
+    public class ExponentialTest
     {
         private static readonly IOperation _nExpM = new OperationNExpM();
 

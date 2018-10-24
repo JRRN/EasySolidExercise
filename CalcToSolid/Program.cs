@@ -1,5 +1,4 @@
 ﻿using System;
-using CalcToSolid.SolidCalc;
 using CalcToSolid.SolidCalc.Interfaces;
 using CalcToSolid.SolidCalc.Logic;
 
@@ -9,7 +8,7 @@ namespace CalcToSolid
     {
         private static readonly IConverter _converter = new Converter(); //Interface segregation
         private static readonly IMenu _menu = new Menu(); //Interface segregation
-        private static readonly ICalculadora _calculadora = new Calculadora(); //Interface segregation
+        private static readonly ICalc _calc = new SolidCalc.Logic.SolidCalc(); //Interface segregation
 
         static void Main(string[] args)
         {
@@ -42,7 +41,7 @@ namespace CalcToSolid
             var operand1 = _converter.ConvertStringToInt(_menu.PrintMenuOperand1()); //Train Wreck - clean code
             var operand2 = _converter.ConvertStringToInt(_menu.PrintMenuOperand2()); //Train Wreck - clean code
             var operation = _menu.PrintMenuOperation();
-            Console.WriteLine(_calculadora.DoOperation(operation, operand1, operand2));
+            Console.WriteLine(_calc.DoOperation(operation, operand1, operand2));
             Console.ReadLine();
         }
     }

@@ -1,5 +1,4 @@
-﻿using System;
-namespace CalcToSolid
+﻿namespace CalcToSolid
 {
     public class NoSolidCalc
     {

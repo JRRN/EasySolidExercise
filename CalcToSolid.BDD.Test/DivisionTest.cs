@@ -1,11 +1,10 @@
-using CalcToSolid.SolidCalc;
 using CalcToSolid.SolidCalc.Interfaces;
 using CalcToSolid.SolidCalc.Logic;
 using Xunit;
 
 namespace CalcToSolid.BDD.Test
 {
-    public class DivTest
+    public class DivisionTest
     {
         private static readonly IOperation _div = new OperationDiv();
 

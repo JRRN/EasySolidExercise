@@ -1,11 +1,10 @@
-using CalcToSolid.SolidCalc;
 using CalcToSolid.SolidCalc.Interfaces;
 using CalcToSolid.SolidCalc.Logic;
 using Xunit;
 
 namespace CalcToSolid.BDD.Test
 {
-    public class SubTest
+    public class SubtractionTest
     {
         private static readonly IOperation _sub = new OperationSub();
         

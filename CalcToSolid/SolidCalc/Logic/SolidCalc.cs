@@ -2,19 +2,19 @@
 
 namespace CalcToSolid.SolidCalc.Logic
 {
-    public class Calculadora : ICalculadora
+    public class SolidCalc : ICalc
     {
-        private readonly IOperation _sumatory;
+        private readonly IOperation _summatory;
         private readonly IOperation _multiplication;
-        private readonly IOperation _substraction;
+        private readonly IOperation _subtraction;
         private readonly IOperation _division;
         private readonly IOperation _exponential;
 
-        public Calculadora()
+        public SolidCalc()
         {
-            _sumatory = new OperationSum(); //Interface segregation
+            _summatory = new OperationSum(); //Interface segregation
             _multiplication = new OperationMul(); //Interface segregation
-            _substraction = new OperationSub(); //Interface segregation
+            _subtraction = new OperationSub(); //Interface segregation
             _division = new OperationDiv(); //Interface segregation
             _exponential = new OperationNExpM(); //Interface segregation
         }
@@ -28,9 +28,9 @@ namespace CalcToSolid.SolidCalc.Logic
                 case OperationType.Mul:
                     return Multiplication(operand1, operand2);
                 case OperationType.Sub:
-                    return Substraction(operand1, operand2);
+                    return Subtraction(operand1, operand2);
                 case OperationType.Sum:
-                    return Sumatory(operand1, operand2);
+                    return Summatory(operand1, operand2);
                 case OperationType.NExpM:
                     return Exponential(operand1, operand2);
                 default:
@@ -48,14 +48,14 @@ namespace CalcToSolid.SolidCalc.Logic
             return _multiplication.Execute(operand1, operand2);
         }
 
-        private int Substraction(int operand1, int operand2)
+        private int Subtraction(int operand1, int operand2)
         {
-            return _substraction.Execute(operand1, operand2);
+            return _subtraction.Execute(operand1, operand2);
         }
 
-        private int Sumatory(int operand1, int operand2)
+        private int Summatory(int operand1, int operand2)
         {
-            return _sumatory.Execute(operand1, operand2);
+            return _summatory.Execute(operand1, operand2);
         }
 
         private int Exponential(int operand1, int operand2)
