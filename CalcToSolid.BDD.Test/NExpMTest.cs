@@ -11,7 +11,7 @@ namespace CalcToSolid.BDD.Test
         [Fact]
         public void GivenTwoNumberWhenApplyExpMThenObtainResult()
         {
-            var result = _nExpM.NExpM(2, 3);
+            var result = _nExpM.Execute(2, 3);
             Assert.IsType<int>(result);
             Assert.Equal(8, result);
         }

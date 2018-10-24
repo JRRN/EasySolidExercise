@@ -11,16 +11,16 @@ namespace CalcToSolid
             var parsed2 = int.TryParse(operand2, out int operandTwoParsed);
 
             if(parsed1 && parsed2){
-                if (operationType.Equals(OperationType.DIV))
+                if (operationType.Equals(OperationType.Div))
                 {
                     return operandOneParsed / operandTwoParsed;
                 }
 
-                if (operationType.Equals(OperationType.MUL))
+                if (operationType.Equals(OperationType.Mul))
                 {
                     return operandOneParsed * operandTwoParsed;
                 }
-                if (operationType.Equals(OperationType.SUB))
+                if (operationType.Equals(OperationType.Sub))
                 {
                     return operandOneParsed - operandTwoParsed;
                 }
@@ -40,10 +40,10 @@ namespace CalcToSolid
     }
 
     public enum OperationType {
-        SUM,
-        SUB,
-        DIV,
-        MUL,
+        Sum,
+        Sub,
+        Div,
+        Mul,
         NExpM
     }
 }

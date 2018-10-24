@@ -1,4 +1,5 @@
 using CalcToSolid.SolidCalc;
+using CalcToSolid.SolidCalc.Interfaces;
 using CalcToSolid.SolidCalc.Logic;
 using Xunit;
 
@@ -10,7 +11,7 @@ namespace CalcToSolid.BDD.Test
         [Fact]
         public void GivenTwoNumberWhenApplyDivThenObtainResult()
         {
-            var result = _div.Div(1, 3);
+            var result = _div.Execute(1, 3);
             Assert.IsType<int>(result);
             Assert.Equal(0, result);
         }

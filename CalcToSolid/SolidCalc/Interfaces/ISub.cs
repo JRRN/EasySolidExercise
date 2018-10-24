@@ -1,7 +1,7 @@
-﻿namespace CalcToSolid.SolidCalc
+﻿namespace CalcToSolid.SolidCalc.Interfaces
 {
     public interface ISub
     {
-        int Sub(int operand1, int operand2);
+        int Execute(int operand1, int operand2);
     }
 }

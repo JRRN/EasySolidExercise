@@ -5,6 +5,7 @@ namespace CalcToSolid.SolidCalc.Logic
 {
     public class Menu : IMenu
     {
+        private readonly IConverter _converter = new Converter();
         public string PrintMenuOperand1() //Single responsibility)
         {
             Console.WriteLine("Intro First Operand");
@@ -25,7 +26,9 @@ namespace CalcToSolid.SolidCalc.Logic
             Console.WriteLine("2: DIV");
             Console.WriteLine("3: MUL");
             Console.WriteLine("4: NExpM");
-            return (OperationType)Console.Read();
+            var operation = Console.ReadLine();
+
+            return (OperationType) _converter.ConvertStringToInt(operation);
         }
     }
 }

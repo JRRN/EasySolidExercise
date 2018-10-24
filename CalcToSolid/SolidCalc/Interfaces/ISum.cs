@@ -1,7 +1,7 @@
-﻿namespace CalcToSolid.SolidCalc
+﻿namespace CalcToSolid.SolidCalc.Interfaces
 {
     public interface ISum
     {
-        int Sum(int operand1, int operand2);
+        int Execute(int operand1, int operand2);
     }
 }

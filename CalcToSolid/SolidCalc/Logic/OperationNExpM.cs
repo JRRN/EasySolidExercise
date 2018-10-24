@@ -6,13 +6,13 @@ namespace CalcToSolid.SolidCalc.Logic
     {
         private static readonly IMul _mul = new OperationMul(); //Liskov 
 
-        int INExpM.NExpM(int operand1, int operand2)
+        public int Execute(int operand1, int operand2)
         {
             int result= operand1;
 
             for (int i=1; i < operand2; i++)
             {
-                result = _mul.Mul(result, operand1);
+                result = _mul.Execute(result, operand1);
             }
             return result;
         }
