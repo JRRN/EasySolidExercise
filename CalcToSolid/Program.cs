@@ -13,7 +13,7 @@ namespace CalcToSolid
         private static readonly IDiv _div = new OperationDiv(); //Interface segregation
         private static readonly IConverter _converter = new Converter(); //Interface segregation
         private static readonly IMenu _menu = new Menu(); //Interface segregation
-        private static readonly INExpM _nExpM = new OperationNExpM();
+        private static readonly INExpM _nExpM = new OperationNExpM(); //Interface segregation
 
         static void Main(string[] args)
         {
@@ -21,7 +21,8 @@ namespace CalcToSolid
             SolidCalc();
         }
 
-        private static void NoSolidOperation(){
+        private static void NoSolidOperation()
+        {
             Console.WriteLine("Intro First Operand");
             var operand1 = Console.ReadLine();
 
@@ -40,18 +41,17 @@ namespace CalcToSolid
             Console.WriteLine(result);
         }
 
-        private static void SolidCalc() {
-
-            var operand1 = _converter.ConvertStringToInt(_menu.PrintMenuOperand1());
-            var operand2 = _converter.ConvertStringToInt(_menu.PrintMenuOperand2());
+        private static void SolidCalc()
+        {
+            var operand1 = _converter.ConvertStringToInt(_menu.PrintMenuOperand1()); //Train Wreck - clean code
+            var operand2 = _converter.ConvertStringToInt(_menu.PrintMenuOperand2()); //Train Wreck - clean code
             var operation = _menu.PrintMenuOperation();
 
-            if (operation.Equals(OperationType.DIV)) Console.Write (_div.Div(operand1, operand2));
-            if (operation.Equals(OperationType.MUL)) Console.Write(_mul.Mul(operand1, operand2));
-            if (operation.Equals(OperationType.SUB)) Console.Write(_sub.Sub(operand1, operand2));
-            if (operation.Equals(OperationType.SUM)) Console.Write(_sum.Sum(operand1, operand2));
-            if (operation.Equals(OperationType.NExpM)) Console.Write(_nExpM.NExpM(operand1, operand2));
-
+            if (operation.Equals(OperationType.DIV)) Console.Write(_div.Div(operand1, operand2)); //Train Wreck - clean code
+            if (operation.Equals(OperationType.MUL)) Console.Write(_mul.Mul(operand1, operand2)); //Train Wreck - clean code
+            if (operation.Equals(OperationType.SUB)) Console.Write(_sub.Sub(operand1, operand2)); //Train Wreck - clean code
+            if (operation.Equals(OperationType.SUM)) Console.Write(_sum.Sum(operand1, operand2)); //Train Wreck - clean code
+            if (operation.Equals(OperationType.NExpM)) Console.Write(_nExpM.NExpM(operand1, operand2)); //Train Wreck - clean code
         }
     }
 }

@@ -9,7 +9,6 @@ namespace CalcToSolid.SolidCalc.Logic
         {
             Console.WriteLine("Intro First Operand");
             return Console.ReadLine();
-
         }
 
         public string PrintMenuOperand2() //Single responsibility)
@@ -28,6 +27,5 @@ namespace CalcToSolid.SolidCalc.Logic
             Console.WriteLine("4: NExpM");
             return (OperationType)Console.Read();
         }
-    
     }
 }

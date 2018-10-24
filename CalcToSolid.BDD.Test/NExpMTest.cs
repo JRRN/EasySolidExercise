@@ -9,7 +9,7 @@ namespace CalcToSolid.BDD.Test
         private static readonly INExpM _nExpM = new OperationNExpM();
 
         [Fact]
-        public void GivenTwoNumberWhenApplySubThenObtainResult()
+        public void GivenTwoNumberWhenApplyExpMThenObtainResult()
         {
             var result = _nExpM.NExpM(2, 3);
             Assert.IsType<int>(result);

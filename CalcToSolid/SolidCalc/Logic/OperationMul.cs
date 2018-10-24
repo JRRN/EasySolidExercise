@@ -1,5 +1,4 @@
-﻿
-namespace CalcToSolid.SolidCalc.Logic
+﻿namespace CalcToSolid.SolidCalc.Logic
 {
 	public class OperationMul : IMul
     {

@@ -2,7 +2,6 @@
 
 namespace CalcToSolid.SolidCalc.Logic
 {
-
     public class OperationNExpM : INExpM
     {
         private static readonly IMul _mul = new OperationMul(); //Liskov 
