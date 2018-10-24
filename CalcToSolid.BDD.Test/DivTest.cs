@@ -7,7 +7,8 @@ namespace CalcToSolid.BDD.Test
 {
     public class DivTest
     {
-        private static readonly IDiv _div = new OperationDiv();
+        private static readonly IOperation _div = new OperationDiv();
+
         [Fact]
         public void GivenTwoNumberWhenApplyDivThenObtainResult()
         {

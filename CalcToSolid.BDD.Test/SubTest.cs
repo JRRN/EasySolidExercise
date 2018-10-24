@@ -7,7 +7,7 @@ namespace CalcToSolid.BDD.Test
 {
     public class SubTest
     {
-        private static readonly ISub _sub = new OperationSub();
+        private static readonly IOperation _sub = new OperationSub();
         
         [Fact]
         public void GivenTwoNumberWhenApplySubThenObtainResult()

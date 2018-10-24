@@ -2,7 +2,7 @@
 
 namespace CalcToSolid.SolidCalc.Logic
 {
-    public class OperationSum : ISum
+    public class OperationSum : IOperation
     {
         public int Execute(int operand1, int operand2) //Single responsibility
         {

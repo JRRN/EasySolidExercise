@@ -7,7 +7,7 @@ namespace CalcToSolid.BDD.Test
 {
     public class MulTest
     {
-        private static readonly IMul _mul = new OperationMul();
+        private static readonly IOperation _mul = new OperationMul();
 
         [Fact]
         public void GivenTwoNumberWhenApplyMulThenObtainResult()

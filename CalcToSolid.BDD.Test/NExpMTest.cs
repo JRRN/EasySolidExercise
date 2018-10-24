@@ -6,7 +6,7 @@ namespace CalcToSolid.BDD.Test
 {
     public class NExpMTest
     {
-        private static readonly INExpM _nExpM = new OperationNExpM();
+        private static readonly IOperation _nExpM = new OperationNExpM();
 
         [Fact]
         public void GivenTwoNumberWhenApplyExpMThenObtainResult()

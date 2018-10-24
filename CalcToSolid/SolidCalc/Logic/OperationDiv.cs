@@ -2,7 +2,7 @@
 
 namespace CalcToSolid.SolidCalc.Logic
 {
-    public class OperationDiv : IDiv
+    public class OperationDiv : IOperation
     {
         public int Execute(int operand1, int operand2) //Single responsibility
         {

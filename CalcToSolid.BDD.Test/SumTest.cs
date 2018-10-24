@@ -7,7 +7,7 @@ namespace CalcToSolid.BDD.Test
 {
     public class SolidCalcTest
     {
-        private static readonly ISum _sum = new OperationSum();
+        private static readonly IOperation _sum = new OperationSum();
 
         [Fact]
         public void GivenTwoNumberWhenApplySumThenObtainResult()
