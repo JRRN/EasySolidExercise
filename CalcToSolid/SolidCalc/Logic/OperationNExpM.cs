@@ -13,7 +13,7 @@ namespace CalcToSolid.SolidCalc.Logic
 
             for (int i=1; i < operand2; i++)
             {
-                result = _mul.Mul(result, result);
+                result = _mul.Mul(result, operand1);
             }
             return result;
         }
