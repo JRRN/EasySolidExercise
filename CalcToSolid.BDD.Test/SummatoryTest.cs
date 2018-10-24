@@ -6,12 +6,12 @@ namespace CalcToSolid.BDD.Test
 {
     public class SolidCalcTest
     {
-        private static readonly IOperation _sum = new OperationSum();
+        private static readonly IOperation _summatory = new OperationSum();
 
         [Fact]
         public void GivenTwoNumberWhenApplySumThenObtainResult()
         {
-            var result = _sum.Execute(1, 3);
+            var result = _summatory.Execute(1, 3);
             Assert.IsType<int>(result);
             Assert.Equal(4,result);
         }
