@@ -1,5 +1,4 @@
 ﻿using CalcToSolid.SolidCalc.Interfaces;
-using CalcToSolid.SolidCalc.Logic;
 using Xunit;
 
 namespace CalcToSolid.BDD.Test
